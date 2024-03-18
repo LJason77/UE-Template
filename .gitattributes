@@ -1,0 +1,37 @@
+[attr]lock filter=lfs diff=lfs merge=binary -text lockable
+[attr]lockonly lockable
+[attr]lfs filter=lfs diff=lfs merge=binary -text
+[attr]lfstext filter=lfs diff=lfstext merge=lfstext -text
+# Unreal Engine file types.
+*.uasset lock
+*.umap lock
+*.locres lfs
+*.locmeta lfs
+# Steam Audio files
+*.phononscene lfs
+*.probebox lfs
+*.probebatch lfs
+*.bakedsources lfs
+# Binaries
+*.exe lfs
+*.dll lfs
+*.rcc lfs
+# FMOD
+*.bank lfs
+*.wav lfs
+*.mp3 lfs
+*.ogg lfs
+*.flac lfs
+# Icons
+*.png lfs
+*.ico lfs
+*.icns lfs
+# Movies
+*.bk2 lfs
+
+# 声明在检出时始终以 LF 行结尾的文件。
+*.cpp text eol=lf
+*.cs text eol=lf
+*.h text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
